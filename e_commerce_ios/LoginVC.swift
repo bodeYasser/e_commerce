@@ -3,7 +3,9 @@
 //  e_commerce_ios
 //
 //  Created by Abdallah yasser on 30/08/2022.
-//
+/////
+/////
+///need to add font and the color
 
 import UIKit
 
@@ -19,23 +21,37 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        makeBorder(view: emailView)
-        makeBorder(view: passwordView)
-        makeBorder(view: loginButton)
+        emailView.addLayer()
+        passwordView.addLayer()
+        loginButton.addLayer()
+        
+    }
+    @IBAction func createNewAcountButtonPressed(_ sender: UIButton) {
+        
+        let signUpVC = storyboard?.instantiateViewController(withIdentifier: "SignUpVC")
+        navigationController?.pushViewController(signUpVC!, animated: true)
+    }
+    @IBAction func forgetPasswordButtonPressed(_ sender: UIButton) {
+        
+        let ForegetPasswordVC = storyboard?.instantiateViewController(withIdentifier: "ForegetPasswordVC")
+        navigationController?.pushViewController(ForegetPasswordVC!, animated: true)
+        
+        
+        
+    }
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        
+        let tabBar = storyboard?.instantiateViewController(withIdentifier: "TabBarController")
+        let navigationController = UINavigationController(rootViewController: tabBar!)
+      //  present.
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true)
+        
         
     }
     
     
-    func makeBorder(view : UIView){
-        
-        view.layer.cornerRadius = 10
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOffset = CGSize(width: 2, height: 3)
-        let shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: 10)
-        view.layer.shadowPath = shadowPath.cgPath
-        view.layer.shadowOpacity = 0.5
-        
-    }
-
+    
+    
 }
 

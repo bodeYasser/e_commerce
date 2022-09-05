@@ -13,25 +13,7 @@ class ForegetPasswordVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        makeBorder(view: emailView)
-        makeBorder(view: sendButton)
-
-    
+        emailView.addLayer()
+        sendButton.addLayer()
     }
-    
-    func makeBorder(view : UIView){
-        
-        view.layer.cornerRadius = 10
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOffset = CGSize(width: 2, height: 3)
-        let shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: 10)
-        view.layer.shadowPath = shadowPath.cgPath
-        view.layer.shadowOpacity = 0.5
-        
-    }
-
-
 }
-
-

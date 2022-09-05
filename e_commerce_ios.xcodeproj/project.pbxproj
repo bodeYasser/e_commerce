@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89171DB828C50C8A0032B5A5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89171DB628C50C8A0032B5A5 /* CollectionViewCell.swift */; };
+		89171DB928C50C8A0032B5A5 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89171DB728C50C8A0032B5A5 /* CollectionViewCell.xib */; };
+		89171DBB28C515CD0032B5A5 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89171DBA28C515CD0032B5A5 /* HomePageVC.swift */; };
+		89171DC228C587120032B5A5 /* NewCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89171DC128C587120032B5A5 /* NewCollectionVC.swift */; };
+		89171DC528C587940032B5A5 /* SubCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89171DC328C587940032B5A5 /* SubCategoriesCollectionViewCell.swift */; };
+		89171DC628C587940032B5A5 /* SubCategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89171DC428C587940032B5A5 /* SubCategoriesCollectionViewCell.xib */; };
 		8971FA7628C3713800A9F2E2 /* ForegetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971FA7528C3713800A9F2E2 /* ForegetPasswordVC.swift */; };
+		8971FA7828C424B000A9F2E2 /* AddLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971FA7728C424B000A9F2E2 /* AddLayerExtension.swift */; };
 		898AB9D028BDFE1F00C46250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898AB9CF28BDFE1F00C46250 /* AppDelegate.swift */; };
 		898AB9D228BDFE1F00C46250 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898AB9D128BDFE1F00C46250 /* SceneDelegate.swift */; };
 		898AB9D428BDFE1F00C46250 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898AB9D328BDFE1F00C46250 /* LoginVC.swift */; };
@@ -18,7 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89171DB628C50C8A0032B5A5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		89171DB728C50C8A0032B5A5 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		89171DBA28C515CD0032B5A5 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		89171DC128C587120032B5A5 /* NewCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionVC.swift; sourceTree = "<group>"; };
+		89171DC328C587940032B5A5 /* SubCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		89171DC428C587940032B5A5 /* SubCategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		8971FA7528C3713800A9F2E2 /* ForegetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegetPasswordVC.swift; sourceTree = "<group>"; };
+		8971FA7728C424B000A9F2E2 /* AddLayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLayerExtension.swift; sourceTree = "<group>"; };
 		898AB9CC28BDFE1F00C46250 /* e_commerce_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = e_commerce_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		898AB9CF28BDFE1F00C46250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		898AB9D128BDFE1F00C46250 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +55,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89171DBC28C569EA0032B5A5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				89171DBD28C56A090032B5A5 /* home page */,
+				89171DBE28C572160032B5A5 /* New Collection */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		89171DBD28C56A090032B5A5 /* home page */ = {
+			isa = PBXGroup;
+			children = (
+				89171DBA28C515CD0032B5A5 /* HomePageVC.swift */,
+				89171DBF28C572380032B5A5 /* Cell */,
+			);
+			path = "home page";
+			sourceTree = "<group>";
+		};
+		89171DBE28C572160032B5A5 /* New Collection */ = {
+			isa = PBXGroup;
+			children = (
+				89171DC128C587120032B5A5 /* NewCollectionVC.swift */,
+				89171DC028C572520032B5A5 /* SubCategoriescell */,
+			);
+			path = "New Collection";
+			sourceTree = "<group>";
+		};
+		89171DBF28C572380032B5A5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89171DB628C50C8A0032B5A5 /* CollectionViewCell.swift */,
+				89171DB728C50C8A0032B5A5 /* CollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		89171DC028C572520032B5A5 /* SubCategoriescell */ = {
+			isa = PBXGroup;
+			children = (
+				89171DC328C587940032B5A5 /* SubCategoriesCollectionViewCell.swift */,
+				89171DC428C587940032B5A5 /* SubCategoriesCollectionViewCell.xib */,
+			);
+			path = SubCategoriescell;
+			sourceTree = "<group>";
+		};
 		898AB9C328BDFE1F00C46250 = {
 			isa = PBXGroup;
 			children = (
@@ -65,10 +124,12 @@
 				89E73BC228C276DD00416808 /* SignUpVC.swift */,
 				898AB9D328BDFE1F00C46250 /* LoginVC.swift */,
 				8971FA7528C3713800A9F2E2 /* ForegetPasswordVC.swift */,
+				8971FA7728C424B000A9F2E2 /* AddLayerExtension.swift */,
 				898AB9D528BDFE1F00C46250 /* Main.storyboard */,
 				898AB9D828BDFE2000C46250 /* Assets.xcassets */,
 				898AB9DA28BDFE2000C46250 /* LaunchScreen.storyboard */,
 				898AB9DD28BDFE2000C46250 /* Info.plist */,
+				89171DBC28C569EA0032B5A5 /* TabBar */,
 			);
 			path = e_commerce_ios;
 			sourceTree = "<group>";
@@ -133,6 +194,8 @@
 			files = (
 				898AB9DC28BDFE2000C46250 /* LaunchScreen.storyboard in Resources */,
 				898AB9D928BDFE2000C46250 /* Assets.xcassets in Resources */,
+				89171DC628C587940032B5A5 /* SubCategoriesCollectionViewCell.xib in Resources */,
+				89171DB928C50C8A0032B5A5 /* CollectionViewCell.xib in Resources */,
 				898AB9D728BDFE1F00C46250 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +208,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E73BC328C276DD00416808 /* SignUpVC.swift in Sources */,
+				8971FA7828C424B000A9F2E2 /* AddLayerExtension.swift in Sources */,
+				89171DBB28C515CD0032B5A5 /* HomePageVC.swift in Sources */,
 				898AB9D428BDFE1F00C46250 /* LoginVC.swift in Sources */,
+				89171DC228C587120032B5A5 /* NewCollectionVC.swift in Sources */,
+				89171DC528C587940032B5A5 /* SubCategoriesCollectionViewCell.swift in Sources */,
+				89171DB828C50C8A0032B5A5 /* CollectionViewCell.swift in Sources */,
 				898AB9D028BDFE1F00C46250 /* AppDelegate.swift in Sources */,
 				8971FA7628C3713800A9F2E2 /* ForegetPasswordVC.swift in Sources */,
 				898AB9D228BDFE1F00C46250 /* SceneDelegate.swift in Sources */,

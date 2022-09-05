@@ -15,26 +15,15 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        makeBorder(view: nameView)
-        makeBorder(view: emailView)
-        makeBorder(view: passwordView)
-        makeBorder(view: signUpButton)
+
+        nameView.addLayer()
+        emailView.addLayer()
+        passwordView.addLayer()
+        signUpButton.addLayer()
     }
     
     
     @IBAction func haveAccountButtonClicked(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-    
-}
-func makeBorder(view : UIView){
-    
-    view.layer.cornerRadius = 10
-    view.layer.shadowColor = UIColor.lightGray.cgColor
-    view.layer.shadowOffset = CGSize(width: 2, height: 3)
-    let shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: 10)
-    view.layer.shadowPath = shadowPath.cgPath
-    view.layer.shadowOpacity = 0.5
-    
 }
